@@ -238,6 +238,33 @@
     z-index: 1;
 }
 
+/*** Milestone ***/
+.milestone-content .icon {
+    padding: 30px;
+    font-size: 35px;
+}
+
+.milestone-group .milestone-subtext span {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+
+/*** Overlay ***/
+.overlay{
+	position:relative;
+}
+.overlay:before{
+	position:absolute;
+	content:"";
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background:#1a76d1;
+	opacity:0.8;
+}
+
 
 /*** Category ***/
 .cat-item div {
