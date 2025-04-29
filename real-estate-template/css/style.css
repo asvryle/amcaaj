@@ -339,6 +339,74 @@
   z-index: 1;
 }
 
+/*** Mission Statement & Corporate Values ***/
+
+.section-card {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 20rem;
+}
+
+.section-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+}
+
+.mission-card .card-header {
+  background-color: #00B78A;
+  background-image: linear-gradient(135deg, #00B78A, #009975);
+}
+
+.corporate-card .card-header {
+  background-color: #006A52;
+  background-image: linear-gradient(135deg, #006A52, #004d3d);
+}
+
+.mission-title, .corporate-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+}
+
+.mission-title::after, .corporate-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 12px auto 0;
+}
+
+.section-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.2;
+  font-size: 64px;
+  color: white;
+}
+
+.decorative-element {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  top: -50px;
+  left: -50px;
+}
+
+.corporate-card .card-body {
+  background-color: #F0F9F6;
+}
+
+.corporate-text-highlight {
+  color: #006A52;
+}
+
 /*** Category ***/
 .cat-item div {
   background: #ffffff;
