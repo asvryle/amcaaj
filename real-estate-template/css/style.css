@@ -1,9 +1,11 @@
 /********** Template CSS **********/
 :root {
-  --primary: #00b98e;
+  --primary: #264a75;
+  --highlights: #1ca6d8;
   --secondary: #ff6922;
-  --light: #effdf5;
+  --light: #D9FAF7;
   --dark: #0e2e50;
+  --hover: #1b2b40;
 }
 
 .back-to-top {
@@ -80,6 +82,7 @@
 }
 
 .navbar {
+  background-color: #264a75;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
 }
 
@@ -97,7 +100,7 @@
   transform: rotate(-180deg);
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
   margin-right: 30px;
   padding: 25px 0;
   color: #ffffff;
@@ -106,9 +109,9 @@
   outline: none;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-  color: var(--primary);
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #1ca6d8;
 }
 
 @media (max-width: 991.98px) {
@@ -117,23 +120,35 @@
     padding: 0;
   }
 
-  .navbar-light .navbar-nav .nav-link {
+  .navbar-dark .navbar-nav .nav-link {
     margin-right: 0;
     padding: 10px 0;
   }
 
-  .navbar-light .navbar-nav {
+  .navbar-dark .navbar-nav {
     border-top: 1px solid #eeeeee;
   }
 }
 
-.navbar-light .navbar-brand {
+.navbar-dark .navbar-brand {
   height: 75px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: var(--dark);
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--light);
   font-weight: 500;
+}
+
+.dropdown-menu {
+  background-color: #264A75;
+}
+
+.dropdown-item {
+  color: #f9f9f9 ;
+}
+
+.dropdown-item:hover {
+  color: #1ca6d8;
 }
 
 @media (min-width: 992px) {
@@ -210,7 +225,7 @@
   justify-content: center;
   background: #ffffff !important;
   border-radius: 50px;
-  border: 1px dashed var(--primary) !important;
+  border: 1px dashed #264a75 !important;
 }
 
 /*** About ***/
@@ -242,6 +257,10 @@
   color: #ffffff;
 }
 
+.milestone-title h1 {
+  color: #f9f9f9;
+}
+
 /*** About Us ***/
 .about {
   padding: 80px 0;
@@ -268,7 +287,7 @@
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background-color: #00b894;
+  background-color: #1ca6d8;
 }
 
 .about-content {
@@ -313,14 +332,14 @@
 }
 
 .highlight {
-  background-color: #80f1daf6;
+  background-color: var(--primary);
   padding: 12px 20px;
   border-radius: 8px;
   margin-top: 20px;
-  border-left: 4px solid #ffd700;
+  border-left: 6px solid #1ca6d8;
 }
 .license-number {
-  color: #b7a123da;
+  color: var(--highlights);
 }
 
 /*** Overlay ***/
@@ -334,7 +353,12 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(135deg, #00b98e 0%, #00d4a3 50%, #00a177 100%);
+  background: linear-gradient(135deg,
+  #1ca6d8 0%,
+  #128ac4 33%,
+  #0d6db0 66%,
+  #094f8a 100%
+);
   opacity: 0.7;
   z-index: 1;
 }
@@ -353,13 +377,13 @@
 }
 
 .mission-card .card-header {
-  background-color: #00B78A;
-  background-image: linear-gradient(135deg, #00B78A, #009975);
+  background-color: #1ca6d8;
+  background-image: linear-gradient(135deg, #1ca6d8, #1589b2);
 }
 
 .corporate-card .card-header {
-  background-color: #006A52;
-  background-image: linear-gradient(135deg, #006A52, #004d3d);
+  background-color: #264a75;
+  background-image: linear-gradient(135deg, #264a75, #1d3a5e);
 }
 
 .mission-title, .corporate-title {
@@ -497,6 +521,10 @@
 
 .service-icon {
   border-radius: 70%;
+}
+
+.service-category-description {
+  color: var(--highlights);
 }
 
 /*** Category ***/

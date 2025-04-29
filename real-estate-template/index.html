@@ -60,17 +60,16 @@
 
       <!-- Navbar Start -->
       <div class="container-fluid nav-bar bg-transparent">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+        <nav class="navbar navbar-expand-lg navbar-dark py-2 px-4">
           <a
             href="index.html"
             class="navbar-brand d-flex align-items-center text-center"
           >
-            <div class="icon p-2 me-2">
+            <div class="icon p-2 me-2 h-100">
               <img
-                class="img-fluid"
-                src="img/amcaaj-logo-2.png"
+                class="img-fluid h-100"
+                src="img/amcaaj-logo-3.png"
                 alt="Icon"
-                style="width: 400px; height: 50px"
               />
             </div>
           </a>
@@ -89,11 +88,28 @@
               <a href="services.html" class="nav-item nav-link">Services</a>
               <a href="clients.html" class="nav-item nav-link">Clients</a>
               <a href="contact.html" class="nav-item nav-link">Contact</a>
-              <a
-                href="https://docs.google.com/forms/d/1j-3eG6-FZ01F0dj_2l77Cd5kIHcILARKrF4wu-7cjDI/closedform"
-                class="nav-item nav-link"
-                >Apply</a
-              >
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Apply</a
+                >
+                <div class="dropdown-menu rounded-0 m-0 p-0">
+                  <a
+                    href="https://docs.google.com/forms/d/1j-3eG6-FZ01F0dj_2l77Cd5kIHcILARKrF4wu-7cjDI/closedform"
+                    class="dropdown-item"
+                    target="_blank"
+                    >QATAR</a
+                  >
+                  <a
+                    href="https://docs.google.com/forms/d/1Fn8H1eQ9HQMuPf4yuyPNl_b6kyK1FQBqDc3FFc5xfdo/closedform"
+                    class="dropdown-item"
+                    target="_blank"
+                    >KSA</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </nav>
@@ -105,7 +121,7 @@
         <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
           <div class="col-md-6 p-5 mt-lg-5">
             <h1 class="display-5 animated fadeIn mb-4">
-              Unlocking <span class="text-primary">Filipino</span> Talent
+              Unlocking Filipino <span class="text-highlights">Talent</span>
             </h1>
             <p class="animated fadeIn mb-4 pb-2" style="font-size: 1.5rem">
               Your Trusted Recruitment Partner
@@ -345,7 +361,10 @@
                     applicants.
                   </p>
 
-                  <div class="highlight wow fadeIn" data-wow-delay="0.6s">
+                  <div
+                    class="highlight text-white wow fadeIn"
+                    data-wow-delay="0.6s"
+                  >
                     Our authority, renewed on August 16, 2022, remains valid
                     until August 15, 2026, under License Number
                     <span class="license-number fw-bold"
@@ -445,8 +464,8 @@
             <div class="row">
               <div class="col-lg-9">
                 <div
-                  class="owl-carousel service-carousel wow fadeInUp"
-                  data-wow-delay="0.1s"
+                  class="owl-carousel service-carousel wow fadeIn"
+                  data-wow-delay="0.2s"
                 >
                   <div class="service-item p-1">
                     <div class="service-item-child rounded overflow-hidden">
@@ -804,7 +823,8 @@
               </div>
               <div class="col-lg-3">
                 <a
-                  class="service-identity-item d-block bg-light text-center rounded p-3 h-100"
+                  class="service-identity-item d-block bg-light text-center rounded p-3 h-100 wow fadeIn"
+                  data-wow-delay="0.3s"
                   href=""
                 >
                   <div
@@ -819,7 +839,7 @@
                       />
                     </div>
                     <h6>Engineering & Construction</h6>
-                    <span
+                    <span class="service-category-description"
                       >Covers the design, building, and installation of
                       structural, mechanical, and electrical systems.</span
                     >
@@ -850,7 +870,7 @@
                       />
                     </div>
                     <h6>Hospitality Industry</h6>
-                    <span
+                    <span class="service-category-description"
                       >Provide services in lodging, food, and guest
                       experience.</span
                     >
