@@ -55,8 +55,8 @@
     });
 
 
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
+    // Services carousel
+    $(".service-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
         margin: 24,
