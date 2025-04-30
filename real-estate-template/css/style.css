@@ -222,9 +222,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.breadcrumb-item a {
+  color: var(--highlights)
+}
+
+.breadcrumb-item a:hover {
+  color: var(--hover);
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
   color: #dddddd;
 }
+
+
 
 /*** Icon ***/
 .icon {
