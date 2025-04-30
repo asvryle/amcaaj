@@ -157,6 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .dropdown-item:hover {
   color: var(--hover);
+  transition: 0.5s ease;
 }
 
 @media (min-width: 992px) {
@@ -628,6 +629,9 @@ h1, h2, h3, h4, h5, h6 {
   transform:scale(1);
   top:0;
 }
+
+/*** Apply ***/
+
 
 /*** Category ***/
 .cat-item div {
